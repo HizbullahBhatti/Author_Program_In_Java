@@ -1,0 +1,78 @@
+
+public class Author {
+
+	private String firstName;
+	private String lastName;
+	private String number;
+	private String Email;
+	private char gender;
+	
+	public Author ( String name)
+	{
+		firstName=name;
+		
+	}
+	
+	public Author(String FName,String LName)
+	{
+		firstName=FName;
+		lastName=LName;
+		
+	}
+	
+	
+	public void setNumber(String number)
+	{
+		this.number=number;
+		
+	}
+	public void setEmail(String email)
+	{
+		Email=email;
+		
+	}
+	
+	public void setGender (char g)
+	{
+		this.gender=g;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getNumber() {
+		return number;
+	}
+
+	public String getEmail() {
+		return Email;
+	}
+
+	public char getGender() {
+		return gender;
+	}
+	
+	public String toString()
+	{
+		
+		return "First Name: "+ firstName + " Last Name: "+ lastName +" Number: " + number + " Email "+ Email +" Gender: " +gender;
+		
+	}
+	
+	
+	
+	
+}

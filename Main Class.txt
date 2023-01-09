@@ -1,0 +1,35 @@
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Book b=new Book();
+	//	Book b2=new Book(5);
+		
+		/*b2.setAuthorData("Jabbar", " Rashidi ", "unknown", "45645453", 'm');
+		b2.setTitle("Programming");
+		b2.setPrice(200);
+		b.setAuthorData("Arslan","" , "arslan@gmail.com", " 556165156", 'm');
+		b.setTitle("Times");
+		b.setPrice(1000);
+		b2.WriteOnBook(2, "I love programming");
+		System.out.println(b);
+		System.out.println(b2);
+		
+		*/
+		
+		
+		Author a=new Author("Samad");
+		a.setEmail("samad@gmail.com");
+		a.setGender('m');
+		a.setLastName("Chandio");
+		a.setNumber("545646545");
+		
+		b.setAuthor(a);
+		
+		System.out.println(b);
+		
+	}
+
+}

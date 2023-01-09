@@ -1,0 +1,45 @@
+
+public class Pages {
+
+	private 	String[] page;
+	
+	public Pages()
+	{
+		page=new String[10];
+		
+	}
+	
+	public Pages(int p)
+	{
+		page=new String[p];
+		
+	}
+	
+	public void setData(int p,String d)
+	{
+		page[p-1]=d;
+		
+	}
+	
+	public String getData(int p)
+	{
+		
+		return page[p-1];
+		
+	}
+	
+	public String toString()
+	{
+		String a="";
+		
+		for(int i=0;i<page.length;i++)
+		{
+			a+="Page number " + (i+1) + "is : " + page[i] + "\n";
+			
+		}
+		return a;
+	}
+	
+	
+	
+}

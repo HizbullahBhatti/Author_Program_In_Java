@@ -1,0 +1,108 @@
+
+public class Book {
+
+	private String title;
+	private Author a;
+	private Pages n;
+	private int price;
+	
+	
+	public Book()
+	{
+	title="";
+	a=new Author("untitled");
+	n=new Pages();
+	price=0;
+		
+	}
+	
+	public Book(String title)
+	{
+		this.title=title;
+		a=new Author("untitled");
+		n=new Pages();
+		price=0;
+		
+	}
+	
+	public Book (int p)
+	{
+		n=new Pages(p);
+		a=new Author("untitled");
+		n=new Pages();
+		
+	}
+	
+	
+	public Book(String title,Author a,Pages n,int price)
+	{
+		this.title=title;
+		this.a=a;
+		this.n=n;
+		this.price=price;
+	}
+	
+	public void setTitle(String title)
+	{
+		this.title=title;
+	}
+	
+	public void WriteOnBook(int p,String d)
+	{
+		n.setData(p, d);
+		
+	}
+	
+	public void setPrice(int price)
+	{
+		
+		this.price=price;
+	}
+	
+	public void setAuthorData(String FName,String LName,String EMail, String Number, char g)
+	{
+		a.setEmail(EMail);
+		a.setFirstName(FName);
+		a.setGender(g);
+		a.setLastName(LName);
+		a.setNumber(Number);
+	}
+	
+	
+	public void setAuthorName(String name)
+	{
+		this.a.setFirstName(name);
+	}
+	
+	public void setLastName(String LastName)
+	{
+		a.setLastName(LastName);
+	}
+	
+	
+	
+	public Author getAuthor()
+	{
+		return a;
+	}
+	
+	public void setAuthor(Author au)
+	{
+		this.a=au;
+		
+	}
+	
+	public String getDataOfBook()
+	{
+		return n.toString();
+		
+	}
+	
+	
+	public String toString()
+	{
+		return "Title" + title +" Author "+ a.toString() +" price: " + price + " Pages data : \n" + n.toString();
+		
+	}
+	
+}
